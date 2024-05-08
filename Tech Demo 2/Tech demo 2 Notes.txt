@@ -1,0 +1,24 @@
+Tech demo 2
+-	-	-
+
+Interaction system
+	With tooltips
+Inventory system
+	Select items & drop items
+subtitle typewriter system with voice over
+document viewing system
+	Pickup paper and view it
+keypad puzzle
+	all keys will display a digit on the screen
+	should require a 4-digit code
+	LED lights should glow depending on right or wrong answer
+	clear, backspace & confirm key
+
+	Trigger an event within level
+
+
+-	-	-	
+
+Debug.Log("Cum stains");
+
+-	-	-
