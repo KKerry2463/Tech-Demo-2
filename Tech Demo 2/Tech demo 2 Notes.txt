@@ -1,24 +1,70 @@
 Tech demo 2
 -	-	-
 
-Interaction system
-	With tooltips
+Interaction system ~Done
+	With tooltips ~ Needs tool tips
 Inventory system
 	Select items & drop items
 subtitle typewriter system with voice over
 document viewing system
 	Pickup paper and view it
 keypad puzzle
-	all keys will display a digit on the screen
-	should require a 4-digit code
-	LED lights should glow depending on right or wrong answer
-	clear, backspace & confirm key
+	all keys will display a digit on the screen ~ Done 
+	should require a 4-digit code ~ Done
+	LED lights should glow depending on right or wrong answer ~ Done
+	clear, backspace & confirm key ~ Done, Minus backspace key, I like the whole commit to the bit keypad.
 
-	Trigger an event within level
+	Trigger an event within level ~ Easy to add if I want for now though It just changes the light. (Left a space in the code for it to do so.)
 
 
 -	-	-	
 
-Debug.Log("Cum stains");
+Debug.Log("This Command was not working for such a long fucking time ARGH it just randomly started working I hate life.");
 
 -	-	-
+"15:33]Will: Remember you're not writing code to make a thing work, you're writing code to make it not break
+[15:34]Will: Consider every edge case in how a player may use it, not just putting in a code and pressing enter
+[15:34]Will: Does it stand up to every possible interaction?" ~ Will 15:33 - 15:34 - 2024
+
+-	-	-
+
+Keypad done, Inspector values exposed to assist in customization of it.
+Interaction system using an interface to detect if something can be interacted with, better than using tags or a string.
+
+-	-	-
+Getting really lost in trying to think of how an inventory should work.
+Clearly I interact with item using my previous system but what happens once I interact?
+here is what I am thinking;
+
+On the interactable items script. (Make it so the item itself does not matter but if it has this script.)
+Interacted with()
+{
+	Check if also Inventory item (Another interface??? Maybe not, feels overkill & kinda N/A here? Probably just check to see if this script 	Inventory item or something.)
+	Check If Slot Free(); -- From the Inventory Controller script.
+		If slot is free then
+			{
+					Store Item in inventory Controller script. (Kept on the player, Not sure what info exactly I will need, Probably game object.)
+	Remove item from world (Destroy seems valid here but I want o find better ways than set active & destroy)	
+			}
+
+}
+
+On the Inventory Controller Script
+
+Check if slots free()
+{
+
+			If slot is free + Item to a free slot (Maybe use an Array with a limit? (Can you even store game objects in a fucking array? I need to check!))
+			If slot not free, Don't continue (Display Inventory full text??)
+			Return true or false depending on if the slot is free.
+}
+
+NEXT comes the process of actual displaying this info to the player, Press "I" brings up everything in inventory, lets you drop stuff out or Inspect it. But that comes after for now I got to focus on Debug logging a working storage system.
+
+-	-	-
+
+Vasco Feedback states;
+
+[12:28]Vasco: have also looked into scriptable objects? ~ Vasco 2024 12:28 may 10th
+
+So I did, they look very useful but I don't see a clear use for the for just the inventory, It has engaged my brain with it being used for saving for a save load screen as it copies over to new instances of the game, Super intresting But overall, More research needed to understand how to use for inventory.

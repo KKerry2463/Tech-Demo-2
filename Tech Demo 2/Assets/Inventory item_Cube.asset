@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55718734fd0cfe447bd5174499527a14, type: 3}
+  m_Name: Inventory item_Cube
+  m_EditorClassIdentifier: 
+  id: InventoryItem_Cube
+  displayName: A cube?
+  icon: {fileID: 21300000, guid: 037bab80ff020324d848096c60487a67, type: 3}
+  prefab: {fileID: 2129836580334264519, guid: 33ca62a5d62784f4ab5d4e93e8433760, type: 3}
